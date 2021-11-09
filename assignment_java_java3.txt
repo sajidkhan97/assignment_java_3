@@ -1,0 +1,176 @@
+1.class CalcLength {
+    public static void main( String args[] ) {
+       String name = "hello world";  //Initilizing a String Object name
+       int length = name.length();  //Calling the inbuilt lenght() method
+       System.out.println("The length of the String \""+name+"\" is: " +length);    }
+}
+
+
+
+2.
+
+class stringConcatF
+{
+ public static void main(String args[])
+ {
+ String str1,str2;
+ Scanner sc = new Scanner(System.in);
+ System.out.println("Enter the 1st string");
+ str1=sc.nextLine();
+ System.out.println("Enter the 2nd string");
+ str2=sc.nextLine();
+   System.out.println("Concatenated String is ");
+   System.out.println(str1.concat(str2));
+ }
+}
+
+
+3.
+
+A.
+
+public class StringLowerExample{  
+public static void main(String args[]){  
+String s1="JAVA STRING POOL REFERS TO COLLECTION OF STRINGS WHICH ARE STORED IN HEAP MEMORY";  
+String s1lower=s1.toLowerCase();  
+System.out.println(s1lower);  
+}}  
+
+
+B.public class StringLowerExample{  
+public static void main(String args[]){  
+String s1="JAVA STRING POOL REFERS TO COLLECTION OF STRINGS WHICH ARE STORED IN HEAP MEMORY";  
+
+System.out.println(s1.toUpperCase());
+
+
+c.
+
+
+public class Replace{  
+public static void main(String args[]){  
+String s1="JAVA STRING POOL REFERS TO COLLECTION OF STRINGS WHICH ARE STORED IN HEAP MEMORY";  
+String replaceString=s1.replace('A','$');  
+System.out.println(replaceString);  
+}}  
+
+d.
+
+
+String input = "JAVA STRING POOL REFERS TO COLLECTION OF STRINGS WHICH ARE STORED IN HEAP MEMORY";
+boolean isFound = input.indexOf("COLLECTION") !=-1? true: false;
+
+
+
+E.
+
+// Java program check if characters in the input string
+// follows the same order as determined by characters
+// present in the given pattern
+
+class GFG
+{
+
+	// Function to check if characters in the input string
+	// follows the same order as determined by characters
+	// present in the given pattern
+	static boolean checkPattern(String str, String pattern)
+	{
+		// len stores length of the given pattern
+		int len = pattern.length();
+
+		// if length of pattern is more than length of
+		// input string, return false;
+		if (str.length() < len)
+		{
+			return false;
+		}
+
+		for (int i = 0; i < len - 1; i++)
+		{
+			// x, y are two adjacent characters in pattern
+			char x = pattern.charAt(i);
+			char y = pattern.charAt(i + 1);
+
+			// find index of last occurrence of character x
+			// in the input string
+			int last = str.lastIndexOf(x);
+
+			// find index of first occurrence of character y
+			// in the input string
+			int first = str.indexOf(y);
+
+			// return false if x or y are not present in the
+			// input string OR last occurrence of x is after
+			// the first occurrence of y in the input string
+			if (last == -1 || first
+					== -1 || last > first)
+			{
+				return false;
+			}
+		}
+
+		// return true if string matches the pattern
+		return true;
+	}
+
+	// Driver code
+	public static void main(String[] args)
+	{
+		String str = "JAVA STRING POOL REFERS TO COLLECTION OF STRINGS WHICH ARE STORED IN HEAP MEMORY";
+		String pattern = "JAVA STRING POOL REFERS TO COLLECTION OF STRINGS WHICH ARE STORED IN HEAP MEMORY";
+
+		System.out.println(checkPattern(str, pattern));
+	}
+}
+
+
+STRINGBUFFER
+
+
+
+
+
+1.
+public class StringAppend
+{
+public static void main(String[] args)
+{
+StringBuffer buffer = new StringBuffer("it is used to at the specified index position");
+buffer.append("is a peer class of string");
+buffer.append("that provide much of ");
+buffer.append("the functionality of strings");
+System.out.println("");
+System.out.println(buffer);
+}}
+
+
+2.public class StringInsert
+public static void main(String[] args)
+StringBuffer buffer = new StringBuffer("it is used to at the specified index position");
+str.insert(14,"insert  text");
+System.out.println("");
+System.out.println(str);
+}
+}
+
+3.
+
+
+public class StringReverse {
+public static void main(String[] args)
+{
+StringBuffer str = new StringBuffer("This method  returns the reversed object on which it was called");
+str.reverse();
+System.out.print("");
+System.out.print("");
+System.out.print(str);
+}
+}
+
+
+
+
+
+
+
